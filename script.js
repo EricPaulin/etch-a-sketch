@@ -12,4 +12,9 @@ function makeGrid(rows, cols)
     }
 }
 
-makeGrid(4, 4);
+makeGrid(10, 10);
+
+container.addEventListener('mouseover', function (e) 
+{
+    e.target.style.background = 'black';
+});
