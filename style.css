@@ -1,8 +1,20 @@
-.container 
+/* CSS variables (--) in :root to signify they will be used multiple times */
+:root 
 {
-    display: flex;
-    align-items: center;
-    border-color: black;
-    border-style: dotted;
-    padding: 1% 10% 7%;
+    --grid-cols: 1;
+    --grid-rows: 1;
 }
+  
+#container 
+{
+    display: grid;
+    /* fr (fraction) divides space so grid possible */
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.cell
+{
+    padding: 1em;
+    border: 1px solid gray;
+}  

@@ -1,15 +1,15 @@
-const container = document.querySelector('#container');
+const container = document.getElementById("container");
 
-const content = document.createElement('div');
-const content2 = document.createElement('div');
-const content3 = document.createElement('div');
-const content4 = document.createElement('div');
-content.classList.add('content');
-content.classList.add('content2');
-content.classList.add('content3');
-content.classList.add('content4');
+// Creates Desired Row x Column size
+function makeGrid(rows, cols) 
+{
+    container.style.setProperty('--grid-rows', rows);
+    container.style.setProperty('--grid-cols', cols);
+    for (let i = 0; i < (rows * cols); i++)
+    {
+        let cell = document.createElement("div");
+        container.appendChild(cell).className = "cell";
+    }
+}
 
-container.appendChild(content);
-container.appendChild(content4);
-container.appendChild(content3);
-container.appendChild(content2);
+makeGrid(4, 4);
