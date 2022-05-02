@@ -20,6 +20,7 @@ html {
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     margin-top: 10px;
 }
@@ -39,8 +40,8 @@ html {
     /* fr (fraction) divides space so grid possible */
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 100vh;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 .cell {
