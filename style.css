@@ -3,7 +3,7 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
- 
+
 /* Background */
 
 html {
@@ -39,8 +39,8 @@ html {
     /* fr (fraction) divides space so grid possible */
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: auto;
-    height: auto;
+    width: 100vh;
+    height: 100vh;
 }
 
 .cell {
@@ -54,7 +54,9 @@ html {
 .controls {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 button {
@@ -70,7 +72,7 @@ button {
 .credits {
     margin-top:10px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     font-family: monospace;
 }
