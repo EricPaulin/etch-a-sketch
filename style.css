@@ -21,7 +21,7 @@ html {
     display: flex;
     justify-content: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 /* Grid */
@@ -59,12 +59,18 @@ html {
 
 button {
     margin: 20px;
-    border-radius: 14px 8px;
     font-size: large;
+    background-color: aliceblue;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* Credits */
 
 .credits {
-    margin-bottom:50px;
+    margin-top:10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: monospace;
 }
